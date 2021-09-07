@@ -247,7 +247,7 @@ namespace consolidated.Functions.Functions
                                     date = date,
                                     MinutesWork = (int)workTime.TotalMinutes,
                                     ETag = "*",
-                                    PartitionKey = "TIME",
+                                    PartitionKey = "CONSOLIDATED",
                                     RowKey = Guid.NewGuid().ToString(),
                                 };
                                 TableOperation addConsolidate = TableOperation.Insert(consolidatedEntity);
@@ -314,11 +314,11 @@ namespace consolidated.Functions.Functions
         [FunctionName(nameof(ConsolidateForDate))]
         public static async Task <IActionResult>ConsolidateForDate(
              [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "consolidate/{date:DateTime?}")] HttpRequest req,
-             [Table("consolidate", Connection = "AzureWebJobsStorage")] CloudTable consolidatedTable,
+             [Table("consolidated", Connection = "AzureWebJobsStorage")] CloudTable consolidatedTable,
              DateTime date,
              ILogger log)
         {
-            log.LogInformation($"Get consolidate for date: {date}, received.");
+            log.LogInformation($"Get consolidated for date: {date}, received.");
             var query  = TableQuery.GenerateFilterConditionForDate("date", QueryComparisons.Equal,date);
             TableQuery<consolidatedEntity> queryTime = new TableQuery<consolidatedEntity>().Where(query);
             IEnumerable<consolidatedEntity> consolidateEntity = await consolidatedTable.ExecuteQuerySegmentedAsync(queryTime, null);
