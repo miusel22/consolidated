@@ -1,0 +1,10 @@
+C:\Distribuida\Repos\consolidated\consolidated.Common\bin\Debug\netcoreapp3.1\consolidated.Common.deps.json
+C:\Distribuida\Repos\consolidated\consolidated.Common\bin\Debug\netcoreapp3.1\consolidated.Common.dll
+C:\Distribuida\Repos\consolidated\consolidated.Common\bin\Debug\netcoreapp3.1\consolidated.Common.pdb
+C:\Distribuida\Repos\consolidated\consolidated.Common\obj\Debug\netcoreapp3.1\consolidated.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Distribuida\Repos\consolidated\consolidated.Common\obj\Debug\netcoreapp3.1\consolidated.Common.AssemblyInfoInputs.cache
+C:\Distribuida\Repos\consolidated\consolidated.Common\obj\Debug\netcoreapp3.1\consolidated.Common.AssemblyInfo.cs
+C:\Distribuida\Repos\consolidated\consolidated.Common\obj\Debug\netcoreapp3.1\consolidated.Common.csproj.CoreCompileInputs.cache
+C:\Distribuida\Repos\consolidated\consolidated.Common\obj\Debug\netcoreapp3.1\consolidated.Common.dll
+C:\Distribuida\Repos\consolidated\consolidated.Common\obj\Debug\netcoreapp3.1\consolidated.Common.pdb
+C:\Distribuida\Repos\consolidated\consolidated.Common\obj\Debug\netcoreapp3.1\consolidated.Common.csproj.AssemblyReference.cache
